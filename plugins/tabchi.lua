@@ -196,7 +196,7 @@ function stats(cb_extra, success, result)
   for k,v in pairs(result) do
     i = i+1
   end
-    local text = "<b>─═हई Tebchi Stats ईह═─</b>\n<i>》Private User ➣</i> <code>"..users2.."</code>\n<i>》PrivateMessages Recived➣</i> <code>"..pvmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》Groups➣</i> <code>"..gps2.."</code>\n<i>》Groups Messages➣</i> <code>"..gpmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》SuperGroups➣</i> <code>"..sgps2.."</code>\n<i>》SuperGroup Messages➣</i> <code>"..sgpmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》Total Saved Links➣</i> <code>"..#links.."</code>\n<i>》Total Saved Contacts➣</i> <code>"..i.."</code>\n<i>PowerBy》</i> @LuaError"
+    local text = "<b>─═हई Tebchi Stats ईह═─</b>\n<i>》Private User ➣</i> <code>"..users2.."</code>\n<i>》PrivateMessages Recived➣</i> <code>"..pvmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》Groups➣</i> <code>"..gps2.."</code>\n<i>》Groups Messages➣</i> <code>"..gpmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》SuperGroups➣</i> <code>"..sgps2.."</code>\n<i>》SuperGroup Messages➣</i> <code>"..sgpmsgs.."</code>\n➖➖➖➖➖➖➖➖\n<i>》Total Saved Links➣</i> <code>"..#links.."</code>\n<i>》Total Saved Contacts➣</i> <code>"..i.."</code>\n<i>GID PORTOCOL 》</i> GWP"
    send_large_msg(get_receiver(cb_extra.msg),text, ok_cb, false)
 end
 
@@ -251,7 +251,7 @@ end
 end
 if matches[1]== "help" and is_sudo(msg) then
 local text =[[
-➣➣TabchiHelp By @LuaError
+➣➣ Herr Makan Girls
 <code>---------------------------------</code>
 <b>─═हई Brodcast Help ईह═─</b>
 <code>》!pm [Id] [Text]</code>
@@ -335,7 +335,7 @@ local text =[[
 <code>》!myinfo</code>
 <i>دریافت اطلاعات</i>
 <code>---------------------------------</code>
-PowerBy 》@LuaError 
+GID PORTOCOL GWP 
 ]]
 return text
 end
@@ -589,7 +589,7 @@ end
   send_large_msg(msg.to.id,"》Robot Left "..matches[2],ok_cb,false)
   end
   if matches[1]=="myinfo" and is_sudo(msg) then
-  local text = "<i>》YourName➣</i> <code>"..msg.from.first_name.."</code>\n<i>》YourId➣</i> <code>"..msg.from.id.."</code>\n<i>》YourUsername➣</i> @"..msg.from.username.."\n<b>PowerBy</b>》@LuaError"
+  local text = "<i>》YourName➣</i> <code>"..msg.from.first_name.."</code>\n<i>》YourId➣</i> <code>"..msg.from.id.."</code>\n<i>》YourUsername➣</i> @"..msg.from.username.."\n<b>GID PORTOCOL </b>》GWP"
   return text
   end
   if matches[1]=="leaveall" and is_sudo(msg) then
@@ -604,7 +604,7 @@ end
 	local addedmsg = redis:get('bot:addedmsg') or "off"
   local autojoin = redis:get('bot:autojoin')  or "off"
   local addcontact = redis:get('bot:addcontacts') or "off"
-  local text = "<b>─═हई Tebchi Settings ईह═─ </b>\n<i>》Autojoin➣</i> <code>"..autojoin.."</code>\n<i>》Add Contacts➣</i> <code>"..addcontact.."</code>\n<i>》Bot Adding Pm➣</i> <code>"..addedmsg.."</code>\n<i>》BotPm ➣</i> <code>"..pm.."</code>\n<i>PowerBy </i>》 @LuaError"  
+  local text = "<b>─═हई Tebchi Settings ईह═─ </b>\n<i>》Autojoin➣</i> <code>"..autojoin.."</code>\n<i>》Add Contacts➣</i> <code>"..addcontact.."</code>\n<i>》Bot Adding Pm➣</i> <code>"..addedmsg.."</code>\n<i>》BotPm ➣</i> <code>"..pm.."</code>\n<i>GID PORTOCOL </i>》 GWP"  
   return text
    end
   
@@ -659,5 +659,5 @@ patterns = {
 run = run,
 pre_process = pre_process
 }
---@LuaError
---@Tele_Sudo
+--GWP
+
