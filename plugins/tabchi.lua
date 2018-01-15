@@ -1,4 +1,4 @@
--- Start TabchiBot
+-- Start GMAKANBot
 local sudomsg = 332185120 -- put your id here 
 local function reload_plugins( )
   plugins = {}
